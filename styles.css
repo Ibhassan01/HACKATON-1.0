@@ -1,0 +1,33 @@
+:root{
+    --overall-background: #150E28;
+    --white-text-color:#FFF;
+    --purple-text-color:#D434FE;
+}
+body{
+    background: url(./Mobile-svgs/Purple-Lens-Flare-PNG.svg);
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-color: var(--overall-background);
+}
+header{
+    display: flex;
+    padding: 3% 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-icon{
+    cursor: pointer;
+}
+.logo{
+    cursor: pointer;
+}
+.logo p{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.get{
+    color: var(--white-text-color)
+}
+.linked{
+    color: var(--purple-text-color)
+}

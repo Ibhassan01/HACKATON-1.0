@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 :root{
     --overall-background: #150E28;
     --white-text-color:#FFF;
@@ -31,3 +36,43 @@ header{
 .linked{
     color: var(--purple-text-color)
 }
+
+/* emmanuel styling */
+
+main {
+    position: relative;
+}
+
+.the_top_text{
+    color: var(--white-text-color);
+    font-weight: 700;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.curved {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #FFF;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+

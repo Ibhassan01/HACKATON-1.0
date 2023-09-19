@@ -1,6 +1,7 @@
 let body = document.body;
 let menuIconEl =document.getElementById('menu-icon');
+let topMenuEl = document.getElementById('nav')
 
 menuIconEl.addEventListener('click', () => {
-    body.style.backgroundColor = 'blue'
+    topMenuEl.style.top = '0'
 })

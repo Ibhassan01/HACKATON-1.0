@@ -9,16 +9,15 @@
     box-sizing: border-box;
 }
 body{
-    font-family:'Clash Display', sans-serif;;
-    padding: 20px;
+    font-family:'Clash Display', sans-serif;
     background: url(./Mobile-svgs/Purple-Lens-Flare-PNG.svg);
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-color: var(--overall-background);
 }
-header{
+.mobile{
     display: flex;
-    padding: 3% 12%;
+    padding: 5%;
     justify-content: space-between;
     align-items: center;
 }
@@ -35,6 +34,56 @@ header{
 .get{
     color: var(--white-text-color)
 }
+.desktop-logo{
+    cursor: pointer;
+}
+.desktop-header{
+    padding: 3% 5%;
+}
+.desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.desktop-logo p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.desktop-nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.navlinks{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlinks{
+    display: flex;
+    list-style-type: none;
+}
+.navlinks li a{
+    line-height: .3px;
+    letter-spacing: .3mm;
+    font-weight: 400;
+    font-size: .8rem;
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+.desktop-nav button a{
+    color: var(--white-text-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .8rem;
+}
+.desktop-nav button{
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
 .linked{
     color: var(--purple-text-color)
 }
@@ -44,9 +93,9 @@ header{
     gap: 15%;
     padding: 30px;
     top: -100%;
-    height: 65%;
-    position: fixed;
+    height: 80%;
     background-color: var(--overall-background);
+    position: fixed;
     width: 100%;
     z-index: 1;
     transition: .3s;
@@ -55,9 +104,17 @@ header{
     margin: 20px 0;
     list-style-type: none;
 }
-#nav p{
-    right:20px;
-    margin-left: 80%;
+#nav #close{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Mobile-svgs/close-icon-background.png);
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    right:10px;
+    margin-left: 90%;
     color: rgb(187, 8, 8);
 }
 #nav ul li a{
@@ -77,42 +134,32 @@ header{
 
 }
 
-/* emmanuel styling */
 
-main {
-    position: relative;
+/* Media query for header tag */
+@media only screen and (max-width:599px){
+    .mobile-header{
+        display: block;
+    }
+    .desktop-header{
+        display: none;
+    }
 }
-
-.the_top_text{
-    color: var(--white-text-color);
-    font-weight: 700;
-    text-align: center;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
+@media only screen and (min-width:600px){
+    .mobile-header{
+        display: none;
+    }
+    .desktop-header{
+        display: block;
+    }
 }
-
-.curved {
-    position: absolute;
-    top: 30px;
-    right: 50px;
-}
-
-.wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    color: #FFF;
-    font-family: 'Clash Display', sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-
-
+@media only screen and (max-width:750px){
+    .navlinks li a{
+        font-size: .6rem;
+    }
+    .desktop-nav button{
+        padding: 12px 20px;
+    }
+    .desktop-logo p{
+        font-size: 1.5rem;
+    }
+} 

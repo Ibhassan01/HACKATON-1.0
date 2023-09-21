@@ -82,13 +82,7 @@ body{
     border: none;
     padding: 15px 30px;
     border-radius: 4px;
-    cursor: pointer;
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
-    transition: .3s;
-}
-.desktop-nav button:hover{
-    border: 1px solid var(--purple-text-color);
-    background: var(--overall-background);
 }
 .linked{
     color: var(--purple-text-color)
@@ -130,10 +124,6 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
-#nav button a{
-    color: var(--white-text-color);
-    text-decoration: none;
 }
 #nav button{
     border-radius: 5px;

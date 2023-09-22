@@ -152,6 +152,182 @@ body{
 }
 
 
+p,h1,button{
+    text-align: center;
+}
+
+main{
+    background-color: #140D27;
+    color: white;
+}
+
+
+img{
+        width: 82.50%;
+        height: 46.22%;
+    }
+
+h1 span{
+        color: #D434FE;
+    }
+
+    main .big_idea{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .info p{
+      text-align: center;
+    }
+
+    .info h1{
+      text-align: center;
+    }
+
+    .judging span{
+        color: #FF26B9;
+        font-weight: bold;
+    }
+
+    .jinfo button{
+        border-color: #140D27;
+        background-image: linear-gradient(#FE34B9, #D434FE ,#903AFF);
+        width:30.11%;
+        height:50px;
+        color: white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-weight: bold;
+        font-size:medium;
+        border-radius: 10px;
+        margin-left: 35%;
+    }
+
+    .faq p{
+        text-align: left;
+        border-bottom:2px solid #FF26B9 ;
+    }
+
+    .faq p span{
+        color: #FE34B9;
+        margin-left: 90%;
+    }
+
+    .t_head{
+        text-align: center;
+    }
+
+    .t_info img{
+       width: 19.32px;
+       height:100%;
+    }
+
+    .t_info{
+        display: flex;
+        margin-left: 3%;
+    }
+
+    .t_text{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .t_info .t_text p{
+        text-align: left;
+    }
+
+    .t_info .t_text p span{
+        color: #D434FE;
+    }
+
+    /* DESKTOP VIEW  */
+
+    @media all and (min-width:600px){
+        
+       main .big_idea {
+            flex-flow: row;
+            margin:0% 5%;
+        }
+
+        main .big_idea div{
+            width: 50%;
+        }
+
+        main .rr{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin:5% 5%;
+        }
+
+        main .rr div{
+            width: 50%;
+        
+        }
+        
+        main .rr div img{
+            width: 100%;
+        }
+
+        main .judging{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin:5% 5%;
+        }
+
+        main .judging div{
+            width: 50%;
+        
+        }
+        
+        main .judging div img{
+            width: 100%;
+        }
+
+        main .judging .jinfo p{
+            text-align: left;
+        }
+
+        main .judging button{
+            height: 60px;
+            width: 40%;
+            border-radius: 8px;
+        }
+
+        main .faq{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin:10% 5%;
+        }
+
+        main .faq div{
+            width: 50%;
+        
+        }
+        
+        main .faq div img{
+            width: 100%;
+        }
+
+        .jinfo button{
+            margin-left: 0;
+        }
+
+        .t_info p{
+            margin-bottom: 8.0%;
+        }
+
+        .t_text{
+            margin-top: 60px;
+        }
+
+    }     
+  
+
+
 /* Media query for header tag */
 @media only screen and (max-width:599px){
     .mobile-header{
@@ -183,7 +359,6 @@ body{
 
 /* emmanuel branch */
 /* first section */
-
 .background_img {
     position: absolute;
     left: 0;
@@ -197,8 +372,7 @@ body{
     align-items: center;
     justify-content: center;
     border-top: 1px solid #FFFFFF2E;
-   } 
-
+}
 /* the section first wrap  for the text */
 .general_wrap1 {
     display: flex;
@@ -206,7 +380,6 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-
 /* text and curve line wrap */
 .text_and_curve_line {
     display: flex;
@@ -215,7 +388,6 @@ body{
     margin-bottom: 24px;
     margin-top: 34px;
 }
-
 .text_and_curve_line p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -226,7 +398,6 @@ body{
     text-align: left;
     color: var(--white-text-color);
 }
-
 .text_and_curve_line img {
     align-self: end;
     position: relative;
@@ -234,7 +405,6 @@ body{
 }
 
 /* h1 text and icon combine */
-
 .h1_wraps {
     display: flex;
     flex-direction: column;
@@ -242,7 +412,6 @@ body{
     gap: 4px;
     color: var(--white-text-color);
 }
-
 .h1_wraps h1 {
     font-family: 'Clash Display', sans-serif;
     font-size: 32px;
@@ -250,14 +419,11 @@ body{
     /* line-height: 39px; */
     letter-spacing: 0em;
     text-align: left;
-   
 }
-
 .h1_wraps h1:first-child {
     position: relative;
     white-space: nowrap;
 }
-
 .h1_wraps h1:first-child img {
     position: absolute;
     top: -13px;
@@ -297,26 +463,22 @@ body{
     }
   }
    */
-
 .h1_wraps h1:last-child {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
-
 .h1_wraps h1:last-child span {
     color: var(--purple-text-color);
     margin-left: 10px;
 }
 
 /* paragraph text and button wrap */
-
 .paragraph_and_button {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
-
 .paragraph_and_button p {
     font-family: Montserrat;
     font-size: 13px;
@@ -324,26 +486,22 @@ body{
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
-
     width: 264px;
     height: 44px;
     color: var(--white-text-color);
 }
-
 .paragraph_and_button button {
     width: 152px;
     height: 46.84px;
     border-radius: 4px;
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
     border: none;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: center;
-
     color: var(--white-text-color);
     cursor: pointer;
 }
@@ -354,47 +512,38 @@ body{
     }
 
 /* the time text structure */
-
 .timing_text {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     color: var(--white-text-color);
-
     margin-top: 5px;
 }
-
 .timing_text p {
-    font-family: Unica One;
+    font-family: "Unica one";
     font-size: 48px;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: 0em;
     text-align: left;
-
     display: flex;
     align-self: center;
     justify-self: center;
     gap: 10px;
 }
-
 .timing_text p sub {
     position: relative;
-
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-
     bottom: -30px;
     right: 8px;
 }
 
 /* the section second wrap for the pictures */
-
 .general_wrap2 {
     display: flex;
     flex-direction: column;
@@ -402,13 +551,11 @@ body{
     justify-content: center;
     position: relative;
 }
-
 .general_wrap2 .first_child {
     position: absolute;
     z-index: 1;
     width: 72%
 }
-
 .general_wrap2 .mobile_img {
     mix-blend-mode: luminosity;
 }
@@ -419,21 +566,18 @@ body{
     z-index: 1;
     width: 13px;
 }
-
 .star1 {
     right: 66px;
     top: -25px;
     width: 6px;
     height: 8px; 
 }
-
 .star2 {
     width: 6px;
     height: 8px;
     right: 82px;
     bottom: 100px;
 }
-
 .star3 {
     left: 126px;
     top: -22px;
@@ -445,23 +589,21 @@ body{
 .desktop_img {
     display: none;
 }
-
 .master_wrap {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-
 .metrix, .lenNear, .left_side {
     display: none;
 }
 
 @media screen and (min-width: 800px) {
 
+
     .paragraph_and_button button {
         cursor: pointer;
     }
-
     /* star repositioning */
     .star3 {
         width: 26px;
@@ -469,27 +611,21 @@ body{
         left: 60px;
         top: -136px;
     }
-
     .star1, .star2 {
         width: 26px;
         height: 32px;
     }
-
     .star1 {
         right: 27px;
         top: -59px;
     }
-
     .star2 {
         right: 101px;
         bottom: 65px
     }
-
-
     .general_wrap2 {
         position: relative;
     }
-
     .left_side {
         display: block;
         position: absolute;
@@ -499,7 +635,6 @@ body{
         mix-blend-mode: hard-light;
         z-index: -2;
     }
-
     .metrix {
         display: block;
         position: absolute;
@@ -507,7 +642,6 @@ body{
         right: 0;
         top: 20px;
     }
-
     .lenNear {
         display: block;
         position: absolute;
@@ -516,12 +650,9 @@ body{
         top: 20px;
         mix-blend-mode: hard-light;
     }
-
-
     main {
         overflow: hidden;
     }
-
     .background_img {
         display: none;
     }
@@ -530,105 +661,87 @@ body{
         margin-top: 6px;
         align-items: center;
     } 
-
-   .h1_wraps {
+.h1_wraps {
     align-items: start;
-   }
-
-   .h1_wraps h1 {
+}
+.h1_wraps h1 {
     font-size: 3rem;
     z-index: 2;
-   }
-
-   .h1_wraps img {
+}
+.h1_wraps img {
     width: 60px;
     height: 60px;
-   }
-
-   .paragraph_and_button {
+}
+.paragraph_and_button {
     align-items: start;
-   }
-
-   .paragraph_and_button p {
+}
+.paragraph_and_button p {
     text-align: left;
     width: 412px;
     font-size: 20px;
     line-height: 27.2px;
-   }
-
-   .timing_text {
+}
+.timing_text {
     justify-content: start;
     margin-top: 87px;
-    }
-
-    .timing_text p {
+}
+.timing_text p {
         font-size: 63px;
-    }
-    .mobile_img {
-        display: none;
-    }
-
-    .desktop_img {
-        display: block;
-        mix-blend-mode: luminosity;
-        min-width: 581px;
-        max-width: 460px;
-    }
-
-    .general_wrap1 {
-        position: relative;
-        right: -132px;
-    }
-
-    .text_and_curve_line {
-        gap: 14px;
-        align-items: end;
-        width: 96%;
-        margin-top: 50px
-    }
-
-    .text_and_curve_line p {
+}
+.mobile_img {
+    display: none;
+}
+.desktop_img {
+    display: block;
+    mix-blend-mode: luminosity;
+    min-width: 581px;
+    max-width: 460px;
+}
+.general_wrap1 {
+    position: relative;
+    right: -132px;
+}
+.text_and_curve_line {
+    gap: 14px;
+    align-items: end;
+    width: 96%;
+    margin-top: 50px
+}
+.text_and_curve_line p {
         font-size: 24px;
     }
-
     .text_and_curve_line img {
         left: -10px;
         width: 173px;
     }
-
     .general_wrap1 {
         gap: 11px;
     }
-
     .paragraph_and_button {
         gap: 49px;
     }
-
     .paragraph_and_button button {
         width: 172px;
         height: 53px;
     }
-
     .h1_wraps h1:first-child img {
         position: absolute;
         top: -41px;
         right: -2px;
     }
-
     .timing_text p sub {
         bottom: -36px;
     }
-
     .paragraph_and_button button {
         font-size: 16px;
     }
- }
+}
 
- @media screen and ( min-width: 1200px) {
 
     .paragraph_and_button button {
         cursor: pointer;
     }
+
 
     .h1_wraps {
         gap: 0px;
@@ -637,55 +750,44 @@ body{
     .h1_wraps h1 {
         font-size: 5rem;
     }
-
     .h1_wraps img {
         width: 76px;
         height: 76px;
     }
-
     .desktop_img {
         min-width: 820px;
         max-width: 415px;
         position: relative;
         right: 63px;
     }
-
     .timing_text p {
         font-size: 64px;
     }
-
     .text_and_curve_line {
         width: 88%;
     }
-
     .text_and_curve_line p {
         font-size: 36px;
     }
-
-     .text_and_curve_line img {
+    .text_and_curve_line img {
         left: -10px;
         width: 253px;
     }
-
     .paragraph_and_button p {
         line-height: 33.2px;
     }
-
-   .h1_wraps h1:first-child img {
+    .h1_wraps h1:first-child img {
         position: absolute;
         top: -48px;
         right: 18px;
     }
-
     .general_wrap2 .first_child {
         right: 175px;
     }
-
     .metrix {
         right: 0;
         top: 20px;
     }
-
     .lenNear {
         display: block;
         position: absolute;
@@ -695,5 +797,4 @@ body{
         width: 62%;
         overflow: hidden;
     }
-
- }
+}

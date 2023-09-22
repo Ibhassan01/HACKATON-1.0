@@ -87,8 +87,12 @@ body{
     cursor: pointer;
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
     transition: .3s;
+    color: white;
+    font-weight: 400;
 }
-.desktop-nav button:hover{
+
+
+.desktop-nav button:hover {
     outline: 1px solid var(--purple-text-color);
     background: var(--overall-background);
 }
@@ -101,7 +105,7 @@ body{
     gap: 15%;
     padding: 30px;
     top: -100%;
-    height: 80%;
+    height: 67%;
     background-color: var(--overall-background);
     position: fixed;
     width: 100%;
@@ -502,6 +506,11 @@ h1 span{
     cursor: pointer;
 }
 
+.paragraph_and_button button:hover {
+        outline: 1px solid var(--purple-text-color);
+        background: var(--overall-background);
+    }
+
 /* the time text structure */
 .timing_text {
     display: flex;
@@ -590,6 +599,11 @@ h1 span{
 }
 
 @media screen and (min-width: 800px) {
+
+
+    .paragraph_and_button button {
+        cursor: pointer;
+    }
     /* star repositioning */
     .star3 {
         width: 26px;
@@ -619,6 +633,7 @@ h1 span{
         top: 10px;
         width: 84%;
         mix-blend-mode: hard-light;
+        z-index: -2;
     }
     .metrix {
         display: block;
@@ -722,7 +737,12 @@ h1 span{
     }
 }
 
-@media screen and ( min-width: 1200px) {
+
+    .paragraph_and_button button {
+        cursor: pointer;
+    }
+
+
     .h1_wraps {
         gap: 0px;
     }

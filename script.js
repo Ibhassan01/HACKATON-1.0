@@ -52,3 +52,13 @@ function startTimer(durationInSeconds) {
 
 // To start the timer with a duration of 45 hours:
 startTimer(45 * 3600 + 30 * 60 + 15);
+
+
+// open the register form
+let theBtn = document.querySelectorAll('#open')
+theBtn.forEach(me => me.addEventListener('click', function() {
+  
+  let filePath = 'register.html';
+  
+  window.location.href = filePath;
+}))

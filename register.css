@@ -338,7 +338,7 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
 }
 /* -------------Modal------------------ */
 
-.modal{
+/* .modal{ */
     /* outline: 1px solid green; */
     /* display: flex;
     flex-direction: column;
@@ -413,5 +413,4 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
     .desktop-nav ul a{
         font-size: .8rem;
     }
-}
 }

@@ -336,6 +336,23 @@ h3{
     border-radius: 4px;
 background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
 }
+/* -------------Modal------------------ */
+
+.modal{
+    /* outline: 1px solid green; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.successful{
+    max-width: 70%;
+    outline: 1px solid rgb(9, 25, 202);
+}
+.sd .sm{
+    width: 50%;
+    position: absolute;
+    top
+} */
 
 /* Media queries for different screen variations */
 @media only screen and (max-width: 850px){
@@ -396,4 +413,5 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
     .desktop-nav ul a{
         font-size: .8rem;
     }
+}
 }

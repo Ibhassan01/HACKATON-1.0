@@ -15,6 +15,7 @@ body{
     background-blend-mode: hard-light;
     background-color: var(--overall-background);
     position: relative;
+    overflow-x: hidden;
 }
 .mobile{
     display: flex;
@@ -191,7 +192,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid white;
+    border-top: 1px solid #FFFFFF2E;
    } 
 
 /* the section first wrap  for the text */
@@ -208,6 +209,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-bottom: 24px;
+    margin-top: 34px;
 }
 
 .text_and_curve_line p {
@@ -339,6 +341,7 @@ body{
     text-align: center;
 
     color: var(--white-text-color);
+    cursor: pointer;
 }
 
 /* the time text structure */

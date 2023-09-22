@@ -342,6 +342,7 @@ body{
 
     color: var(--white-text-color);
     cursor: pointer;
+    z-index: 2;
 }
 
 /* the time text structure */
@@ -448,6 +449,10 @@ body{
 }
 
 @media screen and (min-width: 800px) {
+
+    .paragraph_and_button button {
+        cursor: pointer;
+    }
 
     /* star repositioning */
     .star3 {
@@ -611,6 +616,10 @@ body{
  }
 
  @media screen and ( min-width: 1200px) {
+
+    .paragraph_and_button button {
+        cursor: pointer;
+    }
 
     .h1_wraps {
         gap: 0px;

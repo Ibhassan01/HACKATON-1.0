@@ -148,6 +148,182 @@ body{
 }
 
 
+p,h1,button{
+    text-align: center;
+}
+
+main{
+    background-color: #140D27;
+    color: white;
+}
+
+
+img{
+        width: 82.50%;
+        height: 46.22%;
+    }
+
+h1 span{
+        color: #D434FE;
+    }
+
+    main .big_idea{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .info p{
+      text-align: center;
+    }
+
+    .info h1{
+      text-align: center;
+    }
+
+    .judging span{
+        color: #FF26B9;
+        font-weight: bold;
+    }
+
+    .jinfo button{
+        border-color: #140D27;
+        background-image: linear-gradient(#FE34B9, #D434FE ,#903AFF);
+        width:30.11%;
+        height:50px;
+        color: white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-weight: bold;
+        font-size:medium;
+        border-radius: 10px;
+        margin-left: 35%;
+    }
+
+    .faq p{
+        text-align: left;
+        border-bottom:2px solid #FF26B9 ;
+    }
+
+    .faq p span{
+        color: #FE34B9;
+        margin-left: 90%;
+    }
+
+    .t_head{
+        text-align: center;
+    }
+
+    .t_info img{
+       width: 19.32px;
+       height:100%;
+    }
+
+    .t_info{
+        display: flex;
+        margin-left: 3%;
+    }
+
+    .t_text{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .t_info .t_text p{
+        text-align: left;
+    }
+
+    .t_info .t_text p span{
+        color: #D434FE;
+    }
+
+    /* DESKTOP VIEW  */
+
+    @media all and (min-width:600px){
+        
+       main .big_idea {
+            flex-flow: row;
+            margin:0% 5%;
+        }
+
+        main .big_idea div{
+            width: 50%;
+        }
+
+        main .rr{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin:5% 5%;
+        }
+
+        main .rr div{
+            width: 50%;
+        
+        }
+        
+        main .rr div img{
+            width: 100%;
+        }
+
+        main .judging{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin:5% 5%;
+        }
+
+        main .judging div{
+            width: 50%;
+        
+        }
+        
+        main .judging div img{
+            width: 100%;
+        }
+
+        main .judging .jinfo p{
+            text-align: left;
+        }
+
+        main .judging button{
+            height: 60px;
+            width: 40%;
+            border-radius: 8px;
+        }
+
+        main .faq{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin:10% 5%;
+        }
+
+        main .faq div{
+            width: 50%;
+        
+        }
+        
+        main .faq div img{
+            width: 100%;
+        }
+
+        .jinfo button{
+            margin-left: 0;
+        }
+
+        .t_info p{
+            margin-bottom: 8.0%;
+        }
+
+        .t_text{
+            margin-top: 60px;
+        }
+
+    }     
+  
+
+
 /* Media query for header tag */
 @media only screen and (max-width:599px){
     .mobile-header{

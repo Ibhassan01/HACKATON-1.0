@@ -345,12 +345,12 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
 }
 @media only screen and (max-width: 700px){
     .navlinks li a{
-        font-size: 9rem;
+        font-size: .6rem;
     }
 }
 @media only screen and (max-width: 760px){
     .desktop-nav button{
-        padding: .5% 5%;
+        padding: 3% 5%;
     }
 }
 @media only screen and (max-width: 600px){

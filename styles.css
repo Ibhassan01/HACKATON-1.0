@@ -87,7 +87,7 @@ body{
     transition: .3s;
 }
 .desktop-nav button:hover{
-    border: 1px solid var(--purple-text-color);
+    outline: 1px solid var(--purple-text-color);
     background: var(--overall-background);
 }
 .linked{

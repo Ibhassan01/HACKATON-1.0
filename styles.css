@@ -740,9 +740,11 @@ h1 span{
     .paragraph_and_button button {
         font-size: 16px;
     }
-}
+    }
 
 
+    @media screen and (min-width: 1200px) {
+        
     .paragraph_and_button button {
         cursor: pointer;
     }

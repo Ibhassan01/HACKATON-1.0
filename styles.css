@@ -151,6 +151,7 @@ body{
 
 }
 
+/* AMEEN'S STYLING */
 
 p,h1,button{
     text-align: center;
@@ -201,6 +202,10 @@ h1 span{
         font-size:medium;
         border-radius: 10px;
         margin-left: 35%;
+    }
+
+    .jinfo {
+        line-height: 30px;
     }
 
     .faq p{
@@ -799,4 +804,5 @@ h1 span{
         width: 62%;
         overflow: hidden;
     }
-}
+
+    }

@@ -249,7 +249,11 @@ h1 span{
 
     .trophy{
         align-items: center;
-        margin-top: 30px;
+       
+    }
+
+    .trophies{
+        margin-top: 50px;
     }
     
     .trophy img{

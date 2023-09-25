@@ -25,6 +25,7 @@ Users should be able to:
 
 ### Links
 We use [Vercel](https://vercel.com/) to deploy our project. It's easy and simple to use. It's also great for group works like this one as the live preview of each branch will be available so you can see what's going on before merging
+
 Still in production but you can checkout the live-site [here.....](hackaton-1-0.vercel.app).
 
 ### Built with

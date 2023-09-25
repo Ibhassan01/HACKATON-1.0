@@ -24,9 +24,8 @@ Users should be able to:
 
 
 ### Links
-
-Still in production but you can checkout the live-site here:
-    Live Site URL: [Add live site URL here](hackaton-1-0.vercel.app)
+We use [Vercel](https://vercel.com/) to deploy our project. It's easy and simple to use. It's also great for group works like this one as the live preview of each branch will be available so you can see what's going on before merging
+Still in production but you can checkout the live-site [here.....](hackaton-1-0.vercel.app).
 
 ### Built with
 
@@ -42,11 +41,8 @@ I decided to take on this challenge with two of my friends. Why?
   - This is a perfect opportunity to learn more about git and github
   - Learning about git commands
   - Teamwork
-  - Learning to work together as a team
   - Ability to read, understand and give corrections to each other's code
-
-
-<!-- If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more. -->
+  - Being concious of the code you are writing as other teammembers might need to read your code later on
 
 ### Challenges
 
@@ -56,7 +52,7 @@ Most of the time we often get problems trying to fetch, merge, and we often enco
 
 Any help with implimenting the API to the form section in the registration page and contact page would be very much appreciated. Check the link to the API [here...](https://documenter.getpostman.com/view/13489492/2s9YC5zYA5)
 
-## Authors
+## Author
 
   - Twitter - [@IbHassan01](https://twitter.com/IbHassan01)
 

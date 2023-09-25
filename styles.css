@@ -744,16 +744,12 @@ h1 span{
 
 
     @media screen and (min-width: 1200px) {
-        
     .paragraph_and_button button {
         cursor: pointer;
     }
-
-
     .h1_wraps {
         gap: 0px;
     }
-    
     .h1_wraps h1 {
         font-size: 5rem;
     }
@@ -804,4 +800,3 @@ h1 span{
         width: 62%;
         overflow: hidden;
     }
-

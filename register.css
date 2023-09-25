@@ -7,6 +7,8 @@
     --placeholder-text-color:#FFFFFF40;
 }
 body{
+    display: flex;
+    flex-direction: column;
     background-image: url(./Mobile-svgs/Purple-Lens-Flare-PNG\ \(1\).svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +80,7 @@ h1{
     color: var(--white-text-color);
 }
 
-main{
+.mobile{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,9 +147,6 @@ input::placeholder{
     color: rgba(135, 132, 132, 0.836);
     background-color: var(--input-background);
 }
-/* {
-    outline: 1px solid white;
-} */
 .alert{
     color: var(--alert-text-color);
     font-size: .5rem;
@@ -175,7 +174,7 @@ input::placeholder{
 /* Style the actual checkbox input */
 .custom-checkbox input[type="checkbox"] {
     position: absolute;
-    opacity: 0; /* Hide the default checkbox input */
+    opacity: 0;
 }
 
 /* Style the checkbox container */
@@ -184,17 +183,17 @@ input::placeholder{
     position: absolute;
     top: 0;
     left: 0;
-    height: 15px; /* Set the checkbox height */
-    width: 15px; /* Set the checkbox width */
-    background-color: var(--overall-background); /* Background color of the checkbox */
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Border of the checkbox */
+    height: 15px;
+    width: 15px;
+    background-color: var(--overall-background); 
+    border: 1px solid var(--purple-text-color);
+    border-radius: 5px;
 }
 
 /* Style the checkbox when it's checked */
 .custom-checkbox input[type="checkbox"]:checked + .checkmark {
-    background-color: #ff0040; /* Background color when checked */
-    border: 1px solid var(--placeholder-text-color); /* Border color when checked */
+    background-color: var(--alert-text-color);
+    border: 1px solid var(--placeholder-text-color);
 }
 
 /* Style the checkmark inside the checkbox */
@@ -207,8 +206,8 @@ input::placeholder{
 /* Show the checkmark when the checkbox is checked */
 .custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
     display: block;
-    left: 6px;
-    top: 2px;
+    left: 30%;
+    top: 10%;
     width: 5px;
     height: 10px;
     border: solid #fff;
@@ -225,7 +224,6 @@ input::placeholder{
 background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
 }
 .desktop-view{
-    /* outline: 1px solid green; */
     display: flex;
     padding: 0 1%;
     height: 80vh;
@@ -234,9 +232,8 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
 }
 .register{
     border-radius: 12px;
-background: rgba(255, 255, 255, 0.03);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    /* outline: 1px solid white; */
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 1.5% 5%;
     display: flex;
     width: 33%;
@@ -244,7 +241,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .desktop-view .img{
     width: 40vw;
-    /* outline: 1px solid yellow; */
 }
 .d-text {
     color: var(--white-text-color);
@@ -260,7 +256,6 @@ h3{
     color: var(--white-text-color);
 }
 .desktop-view .d-form{
-    /* outline: 1px solid red; */
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -273,15 +268,12 @@ h3{
 .first, .second{
     display: flex;
     gap: 10%;
-    /* justify-content: center; */
     margin: 1%;
-    /* outline: 1px solid yellowgreen; */
 }
 .third{
     display: flex;
     margin: 1%;
     gap: 4%;
-    /* outline: 1px solid yellowgreen; */
 }
 .one, .two{
     display: flex;
@@ -336,23 +328,80 @@ h3{
     border-radius: 4px;
 background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
 }
-/* -------------Modal------------------ */
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+/* -------------Modal Component------------------ */
 
-/* .modal{ */
-    /* outline: 1px solid green; */
-    /* display: flex;
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    z-index: 5;
+    background-color:  #150e286d;
+    align-self: center;
+    padding: 5%;
+    width: 70%;
+    text-align: center;
+    color: var(--white-text-color);
+    outline: 1px solid var(--purple-text-color);
+    display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .3s;
+}
+.active.modal{
+    display: none;
 }
 .successful{
+    margin: 4% 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
     max-width: 70%;
-    outline: 1px solid rgb(9, 25, 202);
 }
-.sd .sm{
+.sd {
     width: 50%;
-    position: absolute;
-    top
-} */
+    position: relative;
+    z-index: 1;
+    margin-right: -30%; 
+}
+.sm {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+.modal-alert{
+    margin: 5% 0;
+    font-size: .7rem;
+    width: 50%;
+    padding: 2%;
+    font-weight: 400;
+}
+.next-step{
+    margin: 5% 0%;
+    padding: 2%;
+    font-size: .7rem;
+    width: 70%;
+}
+.modal button a{
+    color: var(--white-text-color);
+    font-weight: 400;
+    font-size: .8rem;
+    text-decoration: none;
+}
+.modal button{
+    margin: 5% 0;
+    width: 90%;
+    padding: 5% 10%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: var(--white-text-color);
+    border-radius: 4px;
+background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
 
 /* Media queries for different screen variations */
 @media only screen and (max-width: 850px){
@@ -378,6 +427,26 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
 @media only screen and (min-width: 600px){
     .mobile-header, .mobile{
         display: none;
+    }
+    .modal{
+        width: 30%;
+        max-height: 50%;
+    }
+    .modal-alert{
+        margin: 3% 0;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .successful{
+        margin: 0;
+    }
+    .modal button{
+        margin: 1% 0;
+        padding: 3% 10%;
+    }
+    .next-step{
+        font-size: 1rem;
+        margin: 3% 0;
     }
     .desktop-header, .desktop-main{
         display: block;

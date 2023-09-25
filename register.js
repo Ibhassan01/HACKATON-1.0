@@ -18,6 +18,8 @@ desktopForm.addEventListener('submit', function (event) {
 });
 
 closeButton.addEventListener('click', ()=>{
+    desktopForm.reset();
+    mobileForm.reset();
     modal.classList.add('active');
     fullView.classList.remove('active');
 })

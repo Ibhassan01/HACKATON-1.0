@@ -714,33 +714,33 @@ h1 span{
 }
 .text_and_curve_line p {
         font-size: 24px;
-    }
-    .text_and_curve_line img {
-        left: -10px;
-        width: 173px;
-    }
-    .general_wrap1 {
-        gap: 11px;
-    }
-    .paragraph_and_button {
-        gap: 49px;
-    }
-    .paragraph_and_button button {
-        width: 172px;
-        height: 53px;
-    }
-    .h1_wraps h1:first-child img {
-        position: absolute;
-        top: -41px;
-        right: -2px;
-    }
-    .timing_text p sub {
-        bottom: -36px;
-    }
-    .paragraph_and_button button {
-        font-size: 16px;
-    }
-    }
+}
+.text_and_curve_line img {
+left: -10px;
+width: 173px;
+}
+.general_wrap1 {
+gap: 11px;
+}
+.paragraph_and_button {
+gap: 49px;
+}
+.paragraph_and_button button {
+width: 172px;
+height: 53px;
+}
+.h1_wraps h1:first-child img {
+position: absolute;
+top: -41px;
+right: -2px;
+}
+.timing_text p sub {
+bottom: -36px;
+}
+.paragraph_and_button button {
+font-size: 16px;
+}
+}
 
 
     @media screen and (min-width: 1200px) {
@@ -803,5 +803,268 @@ h1 span{
         top: 107px;
         width: 62%;
         overflow: hidden;
+    }
+}
+
+
+/* ---------the timeline formation----------- */
+#timeline_guild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* --------the header style--------- */
+.the_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.the_header h2 {
+    font-family: 'Clash Display',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26.6px;
+}
+
+.the_header p {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+    width: 292px;
+}
+
+.text_and_date_wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    margin-top: 36px;
+    gap: 24px;
+    position: relative;
+}
+
+.text_and_date_wrap .text p {
+    text-align: left;
+}
+
+.text_and_date_wrap .text b {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+
+    color: var(--purple-text-color);
+}
+
+.text_and_date_wrap .text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+
+    width: 262px;
+    height: 42px;
+
+}
+
+/* .date_path {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    left: -28px;
+    margin: 4px;
+} */
+
+.date_path b {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: var(--purple-text-color);
+}
+
+.rounded {
+    width: 19.32px;
+    height: 19.32px;
+    border-radius: 50%;
+
+    background: linear-gradient(90deg , #903AFF, #D434FE);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rounded p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+.line {
+    position: absolute;
+    width: 77px;
+    transform: rotate(90deg);
+    top: -48px;
+    left: -29px;
+    border: 2px solid #D434FE;
+}
+
+.objects_path {
+    display: block;
+    position: absolute;
+    left: -28px;
+    bottom: -1px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+@media screen and (min-width: 720px) {
+    .text_and_date_wrap {
+        flex-direction: row;
+        align-items: center;
+        gap: 74px;
+    } 
+
+    .general_wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        margin-top: 45px;
+        right: 61px;
+    }
+
+    .objects_path {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .text {
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        width: 250px;
+        gap: 20px
+    }
+
+    .text_and_date_wrap:nth-child(2), .text_and_date_wrap:nth-child(4), .text_and_date_wrap:nth-child(6) {
+        flex-direction: row-reverse;
+        left: 141px;
+    }
+
+    .tex {
+        align-items: end;
+    }
+
+    .text_and_date_wrap .tex p {
+        text-align: right;
+    }
+}
+
+
+
+@media screen and (min-width:1100px) {
+    .text_and_date_wrap {
+        flex-direction: row;
+        align-items: center;
+        gap: 74px;
+    }
+
+    .general_wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .objects_path {
+        position: relative;
+        left: -1px;
+    }
+
+    .objects_path .lin {
+        width: 64px;
+        top: -40px;
+        left: -7px;
+        border-width: 4px;
+    }
+
+    .line {
+        border-width: 4px;
+        left: -12px;
+    }
+
+    .objects_path .rounded {
+        width: 53px;
+        height: 53px;
+        border-radius: 26.5px;
+    }
+
+    .rounded p{
+        font-size: 24px;
+    }
+
+
+    .text_and_date_wrap .text p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        width: 400px;
+        height: 42px;
+    }
+
+    .text {
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        width: 500px;
+        gap: 20px;
+    }
+
+    .text_and_date_wrap .text b {
+        font-size: 24px;
+    }
+
+    .date_path b {
+        font-size: 24px;
+    }
+
+    .text_and_date_wrap:nth-child(2), .text_and_date_wrap:nth-child(4), .text_and_date_wrap:nth-child(6) {
+        flex-direction: row-reverse;
+        left: 322px;
+        transform: translate(-39px, 3px);
+    }
+
+    .tex {
+        align-items: end;
+    }
+
+    .text_and_date_wrap .tex p {
+        text-align: right;
+    }
+
+    .general_wrap {
+        right: 141px;
+    }
+
+    .the_header h2 {
+        font-size: 32px;
     }
 }

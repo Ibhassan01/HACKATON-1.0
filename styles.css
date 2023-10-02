@@ -744,16 +744,12 @@ font-size: 16px;
 
 
     @media screen and (min-width: 1200px) {
-        
     .paragraph_and_button button {
         cursor: pointer;
     }
-
-
     .h1_wraps {
         gap: 0px;
     }
-    
     .h1_wraps h1 {
         font-size: 5rem;
     }
@@ -803,6 +799,7 @@ font-size: 16px;
         top: 107px;
         width: 62%;
         overflow: hidden;
+
     }
 }
 
@@ -1067,4 +1064,5 @@ font-size: 16px;
     .the_header h2 {
         font-size: 32px;
     }
+ }
 }

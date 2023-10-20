@@ -156,13 +156,7 @@ body{
 
 
 /* ------------------------------------------------- */
-.ameen{
-    outline: var(--outline);
-    padding: 5px;
-}
-.faq *{
-    outline: var(--outline);
-}
+
 /* ----------------------------------------------------- */
 
 
@@ -183,7 +177,6 @@ body{
     align-items: center;
 }
 section{
-    outline: var(--outline);
     margin: 8% 0;
 }
 section img{
@@ -214,11 +207,11 @@ section img{
 }
 .judging{
     padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .judging span{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     color: var(--sub-text-color);
     font-weight: 700;
 }
@@ -230,7 +223,7 @@ section img{
 .judging-info p{
     font-size: .9rem;
     line-height: 1.5rem;
-    margin: 5% 10%;
+    margin: 5% 8%;
     text-align: center;
 }
 .judging-info button{
@@ -245,26 +238,33 @@ section img{
     border-radius: 10px;
 }
 .faq{
-    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 8%;
+}
+.faq .header{
+    font-weight: 800;
 }
 .faq .faq-heading{
     text-align: center;
     font-size: 1rem;
+    margin-bottom: 5%;
 }
-.faq p{
-    margin: 3% 0;
-    text-align: left;
-    border-bottom:2px solid #FF26B9;
+.faq .questions p{
+    display: flex;
+    align-items: end;
+    padding: 2% 0;
+    border-bottom: 2px solid var(--purple-text-color);
 }
 .faq p span{
-    color: #FE34B9;
-    margin-left: 90%;
+    color: var(--purple-text-color);
 }
 .t_head{
     text-align: center;
 }
 .t_info img{
-    width: 19.32px;
+    /* width: 19.32px; */
     height:100%;
 }
 .t_info{
@@ -284,6 +284,11 @@ section img{
 }
 
 /* DESKTOP VIEW  */
+@media only screen and (min-width:400px){
+    section img{
+        width: 60%;
+    }
+}    
 @media only screen and (min-width:600px){    
     .big_idea {
         flex-flow: row;
@@ -321,12 +326,11 @@ section img{
     }
     .guidlines .info .header{
         align-items: start;
-        padding: 0 5%;
-        line-height: 110%;
+        padding: 0 3%;
         font-size: 1.3rem;
     }
     .judging{
-        display: flex;
+        flex-direction: row;
         align-items: center;
         margin: 0 7%;
     }
@@ -349,6 +353,21 @@ section img{
         font-size: .8rem;
         margin: 2% 1%;
         text-align: start;
+    }
+    .faq{
+        flex-direction: row;
+        gap: 2%;
+    }
+    .faq .faq-heading{
+        font-size: .8rem;
+    }
+    .faq .questions p{
+        justify-content: space-between;
+        font-size: 3px;
+        /* color: red; */
+    }
+    .faq img{
+        width: 50%;
     }
 }
 
@@ -379,6 +398,24 @@ section img{
         flex-basis: 50%;
         font-size: .9rem;
         margin: 2% 1%;
+    }
+    /* .fa_info{
+        display: flex;
+        flex-direction: column;
+        align-items: start; */
+    }
+    .faq .header{
+        text-align: start;
+    }
+    .faq .questions p{
+        justify-content: space-between;
+        font-size: .9rem;
+    }
+    .faq .faq-heading{
+        font-size: 1rem;
+    }
+    .faq img{
+        flex-basis: 100%;
     }
 }
 /* Media query for header tag */

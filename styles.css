@@ -2,6 +2,8 @@
     --overall-background: #150E28;
     --white-text-color:#FFF;
     --purple-text-color:#D434FE;
+    --sub-text-color:#FF26B9;
+    --outline:1px solid orange;
 }
 * {
     padding: 0;
@@ -10,7 +12,6 @@
 }
 body{
     font-family:'Clash Display', sans-serif;
-    /* background: url(./Mobile-svgs/Purple-Lens-Flare-PNG.svg); */
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-color: var(--overall-background);
@@ -153,186 +154,233 @@ body{
 
 /* AMEEN'S STYLING */
 
-p,h1,button{
-    text-align: center;
-}
 
-main{
+/* ------------------------------------------------- */
+.ameen{
+    outline: var(--outline);
+    padding: 5px;
+}
+.faq *{
+    outline: var(--outline);
+}
+/* ----------------------------------------------------- */
+
+
+.ameen{
     background-color: #140D27;
     color: white;
 }
+.big_idea{
+    padding: 4%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    outline: var(--outline);
+    margin: 8% 0;
+}
+section img{
+    width: 80%;
+}
+.image-container .wobbly{
+    height: 7%;
+    width: 7%;
+    margin: 3% 0;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    margin: 5% 0;
+}
+.header span{
+    color: var(--sub-text-color);
+    text-align: center;
+}
+.info p{
+    font-size: 1rem;
+    padding: 5%;
+    text-align: center;
+    line-height: 2rem;
+    text-align: center;
+}
+.judging{
+    padding: 2% 0;
+}
+.judging span{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    color: var(--sub-text-color);
+    font-weight: 700;
+}
+.judging-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.judging-info p{
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin: 5% 10%;
+    text-align: center;
+}
+.judging-info button{
+    cursor: pointer;
+    padding: 2% 5%;
+    margin: 0 auto;
+    border: none;
+    background-image: linear-gradient(90deg,#FE34B9, #D434FE ,#903AFF);
+    color: var(--white-text-color);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.faq{
+    padding: 0 10%;
+}
+.faq .faq-heading{
+    text-align: center;
+    font-size: 1rem;
+}
+.faq p{
+    margin: 3% 0;
+    text-align: left;
+    border-bottom:2px solid #FF26B9;
+}
+.faq p span{
+    color: #FE34B9;
+    margin-left: 90%;
+}
+.t_head{
+    text-align: center;
+}
+.t_info img{
+    width: 19.32px;
+    height:100%;
+}
+.t_info{
+    display: flex;
+    margin-left: 3%;
+}
+.t_text{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.t_info .t_text p{
+    text-align: left;
+}
+.t_info .t_text p span{
+    color: #D434FE;
+}
 
-
-img{
-        width: 82.50%;
-        height: 46.22%;
-    }
-
-h1 span{
-        color: #D434FE;
-    }
-
-    main .big_idea{
-        display: flex;
-        flex-flow: column;
+/* DESKTOP VIEW  */
+@media only screen and (min-width:600px){    
+    .big_idea {
+        flex-flow: row;
         align-items: center;
+        margin:0% 7%;
     }
-
-    .info p{
-      text-align: center;
+    .image-container{
+        flex-basis: 40%;
     }
-
-    .info h1{
-      text-align: center;
+    .info{
+        flex-basis: 50%;
+        text-align: right;
     }
-
-    .judging span{
-        color: #FF26B9;
-        font-weight: bold;
-    }
-
-    .jinfo button{
-        border-color: #140D27;
-        background-image: linear-gradient(#FE34B9, #D434FE ,#903AFF);
-        width:30.11%;
-        height:50px;
-        color: white;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-        font-weight: bold;
-        font-size:medium;
-        border-radius: 10px;
-        margin-left: 35%;
-    }
-
-    .jinfo {
-        line-height: 30px;
-    }
-
-    .faq p{
-        text-align: left;
-        border-bottom:2px solid #FF26B9 ;
-    }
-
-    .faq p span{
-        color: #FE34B9;
-        margin-left: 90%;
-    }
-
-    .t_head{
-        text-align: center;
-    }
-
-    .t_info img{
-       width: 19.32px;
-       height:100%;
-    }
-
-    .t_info{
-        display: flex;
-        margin-left: 3%;
-    }
-
-    .t_text{
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-    }
-
-    .t_info .t_text p{
+    .big_idea .info p{
+        font-size: .7rem;
+        line-height: 20px;
         text-align: left;
     }
-
-    .t_info .t_text p span{
-        color: #D434FE;
+    .big_idea .info .header{
+        align-items: start;
+        padding: 0 5%;
+        line-height: 110%;
+        font-size: 1.3rem;
     }
+    .guidlines{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 0 7%;
+    }
+    .guidlines .info p{
+        font-size: 1rem;
+        line-height: 20px;
+        text-align: left;
+    }
+    .guidlines .info .header{
+        align-items: start;
+        padding: 0 5%;
+        line-height: 110%;
+        font-size: 1.3rem;
+    }
+    .judging{
+        display: flex;
+        align-items: center;
+        margin: 0 7%;
+    }
+    .judging-info .header{
+        align-items: start;
+        padding: 0 5%;
+        line-height: 110%;
+        font-size: 1.3rem;
+    }
+    .judging img{
+        width: 60%;
+        height: 70%;
+    }
+    .judging-info {
+        align-items: start;
+    }
+    .judging-info p{
+        line-height: 110%;
+        flex-basis: 50%;
+        font-size: .8rem;
+        margin: 2% 1%;
+        text-align: start;
+    }
+}
 
-    /* DESKTOP VIEW  */
-
-    @media all and (min-width:600px){
-        
-       main .big_idea {
-            flex-flow: row;
-            margin:0% 5%;
-        }
-
-        main .big_idea div{
-            width: 50%;
-        }
-
-        main .rr{
-            display: flex;
-            flex-flow: row;
-            align-items: center;
-            margin:5% 5%;
-        }
-
-        main .rr div{
-            width: 50%;
-        
-        }
-        
-        main .rr div img{
-            width: 100%;
-        }
-
-        main .judging{
-            display: flex;
-            flex-flow: row;
-            align-items: center;
-            margin:5% 5%;
-        }
-
-        main .judging div{
-            width: 50%;
-        
-        }
-        
-        main .judging div img{
-            width: 100%;
-        }
-
-        main .judging .jinfo p{
-            text-align: left;
-        }
-
-        main .judging button{
-            height: 60px;
-            width: 40%;
-            border-radius: 8px;
-        }
-
-        main .faq{
-            display: flex;
-            flex-flow: row;
-            align-items: center;
-            margin:10% 5%;
-        }
-
-        main .faq div{
-            width: 50%;
-        
-        }
-        
-        main .faq div img{
-            width: 100%;
-        }
-
-        .jinfo button{
-            margin-left: 0;
-        }
-
-        .t_info p{
-            margin-bottom: 8.0%;
-        }
-
-        .t_text{
-            margin-top: 60px;
-        }
-
-    }     
-  
-
-
+@media only screen and (min-width:1000px){
+    .big_idea .info p{
+    font-size: 1rem;
+    }
+    .info p.header{
+        line-height: 100%;
+        padding: 2% 5%;
+    }
+    .info p.header, .info .header span{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .judging .header{
+        align-items: start;
+    }
+    .judging{
+        margin: 0 7%;
+    }
+    .judging img{
+        width: 100%;
+        height: 70%;
+    }
+    .judging-info p{
+        line-height: 110%;
+        flex-basis: 50%;
+        font-size: .9rem;
+        margin: 2% 1%;
+    }
+}
 /* Media query for header tag */
 @media only screen and (max-width:599px){
     .mobile-header{
@@ -421,7 +469,6 @@ h1 span{
     font-family: 'Clash Display', sans-serif;
     font-size: 32px;
     font-weight: 700;
-    /* line-height: 39px; */
     letter-spacing: 0em;
     text-align: left;
 }
@@ -435,39 +482,6 @@ h1 span{
     right: 20px
 }
 
-
-/* .type {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: visible;
-    border-right: 2px solid #333; 
-    animation: typing 10s steps(14, end) 10s infinite; 
-}
-
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 99%;
-      border-right: none;
-    }
-  }
-
-  .type::after {
-    content: "|";
-    animation: blink 1s infinite;
-  }
-  
-  @keyframes blink {
-    0%, 95% {
-      opacity: 1; 
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-   */
 .h1_wraps h1:last-child {
     display: flex;
     align-items: center;
@@ -799,7 +813,6 @@ font-size: 16px;
         top: 107px;
         width: 62%;
         overflow: hidden;
-
     }
 }
 
@@ -812,7 +825,6 @@ font-size: 16px;
     justify-content: center;
     gap: 10px;
 }
-
 /* --------the header style--------- */
 .the_header {
     display: flex;
@@ -820,24 +832,20 @@ font-size: 16px;
     align-items: center;
     justify-content: center;
 }
-
 .the_header h2 {
     font-family: 'Clash Display',sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 26.6px;
 }
-
 .the_header p {
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-
     width: 292px;
 }
-
 .text_and_date_wrap {
     display: flex;
     flex-direction: column;
@@ -846,39 +854,24 @@ font-size: 16px;
     gap: 24px;
     position: relative;
 }
-
 .text_and_date_wrap .text p {
     text-align: left;
 }
-
 .text_and_date_wrap .text b {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
-
     color: var(--purple-text-color);
 }
-
 .text_and_date_wrap .text p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
-
     width: 262px;
     height: 42px;
-
 }
-
-/* .date_path {
-    display: flex;
-    gap: 5px;
-    position: relative;
-    left: -28px;
-    margin: 4px;
-} */
-
 .date_path b {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -886,22 +879,17 @@ font-size: 16px;
     line-height: 15px;
     letter-spacing: 0em;
     text-align: left;
-
     color: var(--purple-text-color);
 }
-
 .rounded {
     width: 19.32px;
     height: 19.32px;
     border-radius: 50%;
-
     background: linear-gradient(90deg , #903AFF, #D434FE);
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .rounded p {
     font-family: Montserrat;
     font-size: 12px;
@@ -909,7 +897,6 @@ font-size: 16px;
     line-height: 15px;
     letter-spacing: 0em;
 }
-
 .line {
     position: absolute;
     width: 77px;
@@ -918,20 +905,17 @@ font-size: 16px;
     left: -29px;
     border: 2px solid #D434FE;
 }
-
 .objects_path {
     display: block;
     position: absolute;
     left: -28px;
     bottom: -1px;
 }
-
 .text {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-
 
 @media screen and (min-width: 720px) {
     .text_and_date_wrap {

@@ -5,6 +5,9 @@
     --sub-text-color:#FF26B9;
     --outline:1px solid orange;
 }
+html{
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
@@ -152,273 +155,7 @@ body{
 
 }
 
-/* AMEEN'S STYLING */
 
-
-/* ------------------------------------------------- */
-
-/* ----------------------------------------------------- */
-
-
-.ameen{
-    background-color: #140D27;
-    color: white;
-}
-.big_idea{
-    padding: 4%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-.image-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-section{
-    margin: 8% 0;
-}
-section img{
-    width: 80%;
-}
-.image-container .wobbly{
-    height: 7%;
-    width: 7%;
-    margin: 3% 0;
-}
-.header{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 700;
-    margin: 5% 0;
-}
-.header span{
-    color: var(--sub-text-color);
-    text-align: center;
-}
-.info p{
-    font-size: 1rem;
-    padding: 5%;
-    text-align: center;
-    line-height: 2rem;
-    text-align: center;
-}
-.judging{
-    padding: 2% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.judging span{
-    color: var(--sub-text-color);
-    font-weight: 700;
-}
-.judging-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.judging-info p{
-    font-size: .9rem;
-    line-height: 1.5rem;
-    margin: 5% 8%;
-    text-align: center;
-}
-.judging-info button{
-    cursor: pointer;
-    padding: 2% 5%;
-    margin: 0 auto;
-    border: none;
-    background-image: linear-gradient(90deg,#FE34B9, #D434FE ,#903AFF);
-    color: var(--white-text-color);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-weight: bold;
-    border-radius: 10px;
-}
-.faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1% 8%;
-}
-.faq .header{
-    font-weight: 800;
-}
-.faq .faq-heading{
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 5%;
-}
-.faq .questions p{
-    display: flex;
-    align-items: end;
-    padding: 2% 0;
-    border-bottom: 2px solid var(--purple-text-color);
-}
-.faq p span{
-    color: var(--purple-text-color);
-}
-.t_head{
-    text-align: center;
-}
-.t_info img{
-    /* width: 19.32px; */
-    height:100%;
-}
-.t_info{
-    display: flex;
-    margin-left: 3%;
-}
-.t_text{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}
-.t_info .t_text p{
-    text-align: left;
-}
-.t_info .t_text p span{
-    color: #D434FE;
-}
-
-/* DESKTOP VIEW  */
-@media only screen and (min-width:400px){
-    section img{
-        width: 60%;
-    }
-}    
-@media only screen and (min-width:600px){  
-    section img{
-        width: 80%;
-    }  
-    .big_idea {
-        flex-flow: row;
-        align-items: center;
-        margin:0% 7%;
-    }
-    .image-container{
-        flex-basis: 40%;
-    }
-    .info{
-        flex-basis: 50%;
-        text-align: right;
-    }
-    .big_idea .info p{
-        font-size: .7rem;
-        line-height: 20px;
-        text-align: left;
-    }
-    .big_idea .info .header{
-        align-items: start;
-        padding: 0 5%;
-        line-height: 110%;
-        font-size: 1.3rem;
-    }
-    .guidlines{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        margin: 0 7%;
-    }
-    .guidlines .info p{
-        font-size: .8rem;
-        line-height: 20px;
-        text-align: left;
-    }
-    .guidlines .info .header{
-        align-items: start;
-        padding: 0 3%;
-        font-size: 1.3rem;
-    }
-    .judging{
-        flex-direction: row;
-        align-items: center;
-        margin: 0 7%;
-    }
-    .judging-info .header{
-        align-items: start;
-        padding: 0 5%;
-        line-height: 110%;
-        font-size: 1.3rem;
-    }
-    .judging img{
-        width: 60%;
-        height: 70%;
-    }
-    .judging-info {
-        align-items: start;
-    }
-    .judging-info p{
-        line-height: 110%;
-        flex-basis: 50%;
-        font-size: .8rem;
-        margin: 2% 1%;
-        text-align: start;
-    }
-    .faq{
-        flex-direction: row;
-        gap: 2%;
-    }
-    .faq .faq-heading{
-        font-size: .8rem;
-    }
-    .faq .questions p{
-        justify-content: space-between;
-        font-size: .8rem;
-        /* color: red; */
-    }
-    .faq img{
-        width: 50%;
-    }
-}
-
-@media only screen and (min-width:1000px){
-    section img{
-        width: 80%;
-    }
-    .big_idea .info p{
-    font-size: 1rem;
-    }
-    .info p.header{
-        line-height: 100%;
-        padding: 2% 5%;
-    }
-    .info p.header, .info .header span{
-        margin: 0;
-        font-size: 1.5rem;
-    }
-    .judging .header{
-        align-items: start;
-    }
-    .judging{
-        margin: 0 7%;
-    }
-    .judging img{
-        width: 100%;
-        height: 70%;
-    }
-    .judging-info p{
-        line-height: 110%;
-        flex-basis: 50%;
-        font-size: .9rem;
-        margin: 2% 1%;
-    }
-    .faq .header{
-        text-align: start;
-    }
-    .faq .questions p{
-        justify-content: space-between;
-        font-size: .9rem;
-    }
-    .faq .faq-heading{
-        font-size: 1rem;
-    }
-    .faq img{
-        flex-basis: 100%;
-    }
-}
 /* Media query for header tag */
 @media only screen and (max-width:600px){
     .mobile-header{
@@ -458,9 +195,11 @@ section img{
     mix-blend-mode: hard-light;
 }
 .section_1 {
+    /* outline: var(--outline); */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1% auto;
     justify-content: center;
     border-top: 1px solid #FFFFFF2E;
 }
@@ -792,6 +531,274 @@ bottom: -36px;
 .paragraph_and_button button {
 font-size: 16px;
 }
+}
+/* AMEEN'S STYLING */
+
+
+/* ------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+
+#overview{
+    background-color: #140D27;
+    color: white;
+}
+.big_idea{
+    padding: 4%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    margin: 8% 0;
+}
+section img{
+    width: 80%;
+}
+.image-container .wobbly{
+    height: 7%;
+    width: 7%;
+    margin: 3% 0;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    margin: 5% 0;
+}
+.header span{
+    color: var(--sub-text-color);
+    text-align: center;
+}
+.info p{
+    font-size: 1rem;
+    padding: 5%;
+    text-align: center;
+    line-height: 2rem;
+    text-align: center;
+}
+.judging{
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.judging span{
+    color: var(--sub-text-color);
+    font-weight: 700;
+}
+.judging-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.judging-info p{
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin: 5% 8%;
+    text-align: center;
+}
+.judging-info button{
+    cursor: pointer;
+    padding: 2% 5%;
+    margin: 2% auto;
+    border: none;
+    background-image: linear-gradient(90deg,#FE34B9, #D434FE ,#903AFF);
+    color: var(--white-text-color);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 8%;
+}
+#faq .header{
+    font-weight: 800;
+}
+#faq .faq-heading{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5%;
+}
+#faq .questions p{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2% 0;
+    border-bottom: 2px solid var(--purple-text-color);
+}
+#faq p span{
+    color: var(--purple-text-color);
+}
+.t_head{
+    text-align: center;
+}
+.t_info img{
+    /* width: 19.32px; */
+    height:100%;
+}
+.t_info{
+    display: flex;
+    margin-left: 3%;
+}
+.t_text{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.t_info .t_text p{
+    text-align: left;
+}
+.t_info .t_text p span{
+    color: #D434FE;
+}
+
+/* DESKTOP VIEW  */
+@media only screen and (min-width:400px){
+    section img{
+        width: 60%;
+    }
+}    
+@media only screen and (min-width:600px){  
+    section img{
+        width: 80%;
+    }  
+    .big_idea {
+        flex-flow: row;
+        align-items: center;
+        margin:0% 7%;
+    }
+    .image-container{
+        flex-basis: 40%;
+    }
+    .info{
+        flex-basis: 50%;
+        text-align: right;
+    }
+    .big_idea .info p{
+        font-size: .7rem;
+        line-height: 20px;
+        text-align: left;
+    }
+    .big_idea .info .header{
+        align-items: start;
+        padding: 0 5%;
+        line-height: 110%;
+        font-size: 1.3rem;
+    }
+    .guidlines{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 0 7%;
+    }
+    .guidlines .info p{
+        font-size: .8rem;
+        line-height: 20px;
+        text-align: left;
+    }
+    .guidlines .info .header{
+        align-items: start;
+        padding: 0 3%;
+        font-size: 1.3rem;
+    }
+    .judging{
+        flex-direction: row;
+        align-items: center;
+        margin: 0 7%;
+    }
+    .judging-info .header{
+        align-items: start;
+        padding: 0 5%;
+        line-height: 110%;
+        font-size: 1.3rem;
+    }
+    .judging img{
+        width: 60%;
+        height: 70%;
+    }
+    .judging-info {
+        align-items: start;
+    }
+    .judging-info p{
+        line-height: 110%;
+        flex-basis: 50%;
+        font-size: .8rem;
+        margin: 2% 1%;
+        text-align: start;
+    }
+    #faq{
+        flex-direction: row;
+        gap: 2%;
+    }
+    #faq .faq-heading{
+        font-size: .8rem;
+    }
+    #faq .questions p{
+        justify-content: space-between;
+        font-size: .8rem;
+        /* color: red; */
+    }
+    #faq img{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    section img{
+        width: 80%;
+    }
+    .big_idea .info p{
+    font-size: 1rem;
+    }
+    .info p.header{
+        line-height: 100%;
+        padding: 2% 5%;
+    }
+    .info p.header, .info .header span{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .judging .header{
+        align-items: start;
+    }
+    .judging{
+        margin: 0 7%;
+    }
+    .judging img{
+        width: 100%;
+        height: 70%;
+    }
+    .judging-info p{
+        line-height: 110%;
+        flex-basis: 50%;
+        font-size: .9rem;
+        margin: 2% 1%;
+    }
+    #faq .header{
+        text-align: start;
+    }
+    #faq .questions p{
+        justify-content: space-between;
+        font-size: .9rem;
+    }
+    #faq .faq-heading{
+        font-size: 1rem;
+    }
+    #faq img{
+        flex-basis: 100%;
+    }
 }
 
 

@@ -289,7 +289,10 @@ section img{
         width: 60%;
     }
 }    
-@media only screen and (min-width:600px){    
+@media only screen and (min-width:600px){  
+    section img{
+        width: 80%;
+    }  
     .big_idea {
         flex-flow: row;
         align-items: center;
@@ -320,7 +323,7 @@ section img{
         margin: 0 7%;
     }
     .guidlines .info p{
-        font-size: 1rem;
+        font-size: .8rem;
         line-height: 20px;
         text-align: left;
     }
@@ -363,7 +366,7 @@ section img{
     }
     .faq .questions p{
         justify-content: space-between;
-        font-size: 3px;
+        font-size: .8rem;
         /* color: red; */
     }
     .faq img{
@@ -372,6 +375,9 @@ section img{
 }
 
 @media only screen and (min-width:1000px){
+    section img{
+        width: 80%;
+    }
     .big_idea .info p{
     font-size: 1rem;
     }
@@ -399,11 +405,6 @@ section img{
         font-size: .9rem;
         margin: 2% 1%;
     }
-    /* .fa_info{
-        display: flex;
-        flex-direction: column;
-        align-items: start; */
-    }
     .faq .header{
         text-align: start;
     }
@@ -419,7 +420,7 @@ section img{
     }
 }
 /* Media query for header tag */
-@media only screen and (max-width:599px){
+@media only screen and (max-width:600px){
     .mobile-header{
         display: block;
     }
@@ -1085,5 +1086,4 @@ font-size: 16px;
     .the_header h2 {
         font-size: 32px;
     }
- }
 }

@@ -744,6 +744,7 @@ section img{
     }
     #faq .faq-heading{
         font-size: .8rem;
+        font-weight: 700;
     }
     #faq .questions p{
         justify-content: space-between;
@@ -770,7 +771,20 @@ section img{
         margin: 0;
         font-size: 1.5rem;
     }
+    .guidlines .info p{
+        padding: 2% 0;
+        font-size: 1rem;
+        line-height: 20px;
+        text-align: left;
+    }
+    .guidlines .info .header{
+        padding: 2% 0;
+        text-align: left;
+        align-items: start;
+        font-size: 1.3rem;
+    }
     .judging .header{
+        padding: 0;
         align-items: start;
     }
     .judging{
@@ -781,6 +795,7 @@ section img{
         height: 70%;
     }
     .judging-info p{
+        align-items: start;
         line-height: 110%;
         flex-basis: 50%;
         font-size: .9rem;
@@ -791,7 +806,7 @@ section img{
     }
     #faq .questions p{
         justify-content: space-between;
-        font-size: .9rem;
+        font-size: 1rem;
     }
     #faq .faq-heading{
         font-size: 1rem;

@@ -9,6 +9,9 @@ menuIconEl.addEventListener('click', () => {
 closeMenuEl.addEventListener('click', () => {
     topMenuEl.style.top = '-100%'
 });
+function closeMenu(){
+  topMenuEl.style.top ='-100%'
+}
 
 
 // Variables to store timer data

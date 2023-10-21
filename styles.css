@@ -774,13 +774,9 @@ section img{
     .guidlines .info p{
         padding: 2% 0;
         font-size: 1rem;
-        line-height: 20px;
-        text-align: left;
     }
     .guidlines .info .header{
         padding: 2% 0;
-        text-align: left;
-        align-items: start;
         font-size: 1.3rem;
     }
     .judging .header{

@@ -5,6 +5,11 @@
     --sub-text-color:#FF26B9;
     --outline:1px solid orange;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
 * {
     padding: 0;
     margin: 0;
@@ -283,6 +288,11 @@ section img{
     color: #D434FE;
 }
 
+.h1_wraps img {
+    width: 46px;
+    height: 46px;
+}
+
 /* DESKTOP VIEW  */
 @media only screen and (min-width:400px){
     section img{
@@ -402,8 +412,8 @@ section img{
     /* .fa_info{
         display: flex;
         flex-direction: column;
-        align-items: start; */
-    }
+        align-items: start; 
+    } */
     .faq .header{
         text-align: start;
     }
@@ -451,11 +461,13 @@ section img{
 /* first section */
 .background_img {
     position: absolute;
-    left: 0;
-    top: 10px;
+    left: -10px;
+    top: 101px;
     z-index: -1;
     mix-blend-mode: hard-light;
+    width: 79%;
 }
+
 .section_1 {
     display: flex;
     flex-direction: column;
@@ -463,6 +475,7 @@ section img{
     justify-content: center;
     border-top: 1px solid #FFFFFF2E;
 }
+
 /* the section first wrap  for the text */
 .general_wrap1 {
     display: flex;
@@ -480,18 +493,19 @@ section img{
 }
 .text_and_curve_line p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: clamp(9px, 3vh, 16px);
     font-style: italic;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: var(--white-text-color);
 }
 .text_and_curve_line img {
     align-self: end;
     position: relative;
     left: -10px;
+    width: 40%;
 }
 
 /* h1 text and icon combine */
@@ -504,7 +518,7 @@ section img{
 }
 .h1_wraps h1 {
     font-family: 'Clash Display', sans-serif;
-    font-size: 32px;
+    font-size: clamp(1rem, 3vh, 2.3rem);
     font-weight: 700;
     letter-spacing: 0em;
     text-align: left;
@@ -515,8 +529,8 @@ section img{
 }
 .h1_wraps h1:first-child img {
     position: absolute;
-    top: -13px;
-    right: 20px
+    top: -36px;
+    right: -3px;
 }
 
 .h1_wraps h1:last-child {
@@ -652,6 +666,73 @@ section img{
 }
 .metrix, .lenNear, .left_side {
     display: none;
+}
+
+@media screen and (min-width: 560px) {
+    .master_wrap {
+        flex-direction: row;
+        margin-top: 6px;
+        align-items: center;
+        padding-inline: 11px
+    }
+
+    .text_and_curve_line {
+        gap: 14px;
+        align-items: end;
+        width: 86%;
+        margin-top: 50px;
+    }
+
+    .text_and_curve_line img {
+        align-self: end;
+        position: relative;
+        left: -10px;
+        width: 23%;
+    }
+
+    .text_and_curve_line {
+        gap: 6px;
+        align-items: end;
+        width: 86%;
+        margin-top: 50px;
+    }
+
+    section img {
+        width: 84%;
+    }
+
+    section img {
+        width: 84%;
+    }
+
+    .paragraph_and_button p {
+        text-align: left;
+        max-width: 412px;
+        font-size: 20px;
+        line-height: 27.2px;
+    }
+
+    .h1_wraps {
+        align-items: start;
+    }
+
+    .paragraph_and_button {
+        gap: 88px;
+    }
+
+    .paragraph_and_button {
+        align-items: start;
+    }
+
+    .timing_text {
+        justify-content: start;
+        margin-top: 30px;
+    }
+
+    .general_wrap1 {
+        position: relative;
+        right: -48px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -881,13 +962,14 @@ font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    width: 292px;
+    max-width: 292px;
 }
 .text_and_date_wrap {
     display: flex;
     flex-direction: column;
     margin: 7px;
     margin-top: 36px;
+    margin-left: 10%;
     gap: 24px;
     position: relative;
 }
@@ -898,7 +980,7 @@ font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 700;
-    line-height: 15px;
+    line-height: 28px;
     color: var(--purple-text-color);
 }
 .text_and_date_wrap .text p {
@@ -906,7 +988,7 @@ font-size: 16px;
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
-    width: 262px;
+    max-width: 262px;
     height: 42px;
 }
 .date_path b {
@@ -985,7 +1067,7 @@ font-size: 16px;
 
     .text_and_date_wrap:nth-child(2), .text_and_date_wrap:nth-child(4), .text_and_date_wrap:nth-child(6) {
         flex-direction: row-reverse;
-        left: 141px;
+        left: 96px;
     }
 
     .tex {
@@ -1021,7 +1103,7 @@ font-size: 16px;
     .objects_path .lin {
         width: 64px;
         top: -40px;
-        left: -7px;
+        left: -6px;
         border-width: 4px;
     }
 
@@ -1062,11 +1144,12 @@ font-size: 16px;
 
     .date_path b {
         font-size: 24px;
+        text-wrap: nowrap;
     }
 
     .text_and_date_wrap:nth-child(2), .text_and_date_wrap:nth-child(4), .text_and_date_wrap:nth-child(6) {
         flex-direction: row-reverse;
-        left: 322px;
+        left: 228px;
         transform: translate(-39px, 3px);
     }
 
@@ -1086,4 +1169,4 @@ font-size: 16px;
         font-size: 32px;
     }
  }
-}
+

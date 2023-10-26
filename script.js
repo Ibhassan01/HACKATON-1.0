@@ -62,3 +62,22 @@ theBtn.forEach(me => me.addEventListener('click', function() {
   
   window.location.href = filePath;
 }))
+
+let more = document.querySelector('.js_read_more_btn')
+let moreList = document.querySelectorAll('.more')
+
+more.addEventListener('click', () => {
+  if (more.innerHTML === 'Read More') {
+    moreList.forEach((men) => {
+      men.style.display = 'flex'
+
+      more.innerHTML = 'Read Less'
+    }) 
+  } else {
+    moreList.forEach((men) => {
+    men.style.display = 'none'
+
+    more.innerHTML = 'Read More'
+    })
+    }
+})

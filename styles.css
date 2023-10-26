@@ -182,11 +182,9 @@ body{
     align-items: center;
 }
 section{
-    margin: 8% 0;
+    margin: 5% 0;
 }
-section img{
-    width: 80%;
-}
+
 .image-container .wobbly{
     height: 7%;
     width: 7%;
@@ -295,9 +293,7 @@ section img{
 
 /* DESKTOP VIEW  */
 @media only screen and (min-width:400px){
-    section img{
-        width: 60%;
-    }
+    
 }    
 @media only screen and (min-width:600px){    
     .big_idea {
@@ -697,14 +693,6 @@ section img{
         margin-top: 50px;
     }
 
-    section img {
-        width: 84%;
-    }
-
-    section img {
-        width: 84%;
-    }
-
     .paragraph_and_button p {
         text-align: left;
         max-width: 412px;
@@ -1067,7 +1055,7 @@ font-size: 16px;
 
     .text_and_date_wrap:nth-child(2), .text_and_date_wrap:nth-child(4), .text_and_date_wrap:nth-child(6) {
         flex-direction: row-reverse;
-        left: 96px;
+        left: 118px;
     }
 
     .tex {

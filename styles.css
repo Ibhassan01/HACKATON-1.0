@@ -290,7 +290,7 @@ section{
 }
 
 .h1_wraps img {
-    width: 46px;
+    width: 30px;
     height: 46px;
 }
 
@@ -515,12 +515,10 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
     color: var(--white-text-color);
 }
 .h1_wraps h1 {
     font-family: 'Clash Display', sans-serif;
-    font-size: clamp(1rem, 3vh, 2.3rem);
     font-weight: 700;
     letter-spacing: 0em;
     text-align: left;
@@ -894,9 +892,7 @@ font-size: 16px;
 section{
     margin: 8% 0;
 }
-section img{
-    width: 80%;
-}
+
 .image-container .wobbly{
     height: 7%;
     width: 7%;

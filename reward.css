@@ -42,9 +42,8 @@ img {
 .de_wrap_reware picture img {
   max-width: 548px;
   max-height: 482px;
-  width: 321px;
-  height: 282px;
-  flex-shrink: 0;
+  width: 100%;
+  height: auto;
 }
 
 .stages {
@@ -52,18 +51,19 @@ img {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 100%;
 }
+
 
 .stage_css {
   display: flex;
   flex-direction: column;
-  width: 90.007px;
+  width: 27%;
   height: 147.323px;
 
 
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .first_award {
@@ -120,6 +120,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  max-width: 100%;
 }
 
 .amount {
@@ -149,7 +150,7 @@ img {
   .present {
     text-align: left;
     position: relative;
-    right: -225px
+    right: -135px
   }
 
   .present p {
@@ -248,13 +249,14 @@ img {
 
 .container_loge_section {
   display: grid;
-  grid-template-columns: repeat(3, 95px);
+  grid-template-columns: repeat(3, 17%);
   grid-template-rows: repeat(2, 70px);
   border-radius: 5px;
   border: 1px solid #D434FE;
   align-items: center;
   justify-content: center;
   padding: 30px;
+  width: 100%;
 }
 
 .bear {
@@ -285,7 +287,7 @@ img {
 }
 
 .text_logo {
-  font-size: clamp(0.6rem, 3vh, 1.5rem);
+  font-size: 80%;
   color: white;
 }
  
@@ -298,24 +300,55 @@ img {
   flex-direction: column;
 }
 
+.six div {
+  font-size: 71%;
+}
+
 .six div .span1 {
   color: #f00;
 }
 
 .six p {
-  font-size: 0.2955rem;
+  font-size: 20%;
   align-self: flex-end;
   position: relative;
   top: -2px;
   right: -4px;
 }
 
+@media screen and (min-width: 280px) {
+  .container_loge_section {
+    grid-template-columns: repeat(3, 34%);
+    grid-template-rows: repeat(2, 70px);
+    width: 78%;
+    padding: 13px;
+}
 
+.straight_line2 {
+  bottom: -22px;
+  height: 45px;
+}
+
+}
+
+@media screen and (min-width: 320px) {
+  .container_loge_section {
+    grid-template-columns: repeat(3, 17%);
+    grid-template-rows: repeat(2, 70px);
+    width: 100%;
+  }
+
+  .straight_line2 {
+    bottom: -36px;
+    height: 68px;
+  }
+}
 
 @media screen and (min-width: 680px) {
   .container_loge_section {
-    grid-template-columns: repeat(3, 162px);
-    grid-template-rows: repeat(2, 87px);
+      grid-template-columns: repeat(3, 27%);
+      grid-template-rows: repeat(2, 87px);
+      width: 62%;
   }
 
   .straight_line2 {
@@ -433,6 +466,7 @@ img {
   gap: 20px;
 
   max-width: 295px;
+  margin-inline: 20px
 }
 
 .p_inner {
@@ -466,7 +500,8 @@ img {
 
 .list_tick {
   position: relative;
-  top: -30px;
+  top: -46px;
+  width: 76px;
 }
 
 .inner2_privacy button {
@@ -604,7 +639,7 @@ footer {
 }
 
 .inner_footer {
-  gap: 20px;
+  gap: 38px;
 
   display: flex;
   flex-direction: column;
@@ -691,8 +726,9 @@ footer p{
 @media screen and (min-width: 680px) {
   footer .inner_footer {
     display: grid;
-    grid-template-columns: repeat(3, 235px);
-    column-gap: 5%;
+    grid-template-columns: repeat(3, 216px);
+    column-gap: 4%;
+    padding: 23px;
   }
 
   .inner_foot1 h2 {

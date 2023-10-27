@@ -6,10 +6,13 @@
     --outline:1px solid orange;
 }
 
+
 img {
     display: block;
     max-width: 100%;
 }
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -159,6 +162,7 @@ body{
     color: var(--white-text-color);
 
 }
+
 
 /* AMEEN'S STYLING */
 
@@ -427,6 +431,9 @@ section{
         flex-basis: 100%;
     }
 }
+
+
+
 
 /* Media query for header tag */
 @media only screen and (max-width:600px){
@@ -1437,5 +1444,7 @@ section{
     .the_header h2 {
         font-size: 32px;
     }
+
  }
+
 

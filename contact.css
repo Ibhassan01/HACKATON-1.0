@@ -81,7 +81,7 @@ main{
     outline: 1px solid var(--purple-text-color);
     background: var(--overall-background);
 }
-.desktop-nav button a{
+.desktop-nav button {
     text-decoration: none;
     color: var(--white-text-color);
 }
